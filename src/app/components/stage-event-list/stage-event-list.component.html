@@ -1,0 +1,23 @@
+<br/>
+
+
+<table CELLPADDING="10" CELLSPACING="10" WIDTH="1250" class="css-serial" >
+    
+  <thead>
+    <th width='50'>Sno</th>
+    <th>Name</th>
+    <th>Status</th>
+    <th>Type</th>
+  </thead>
+  <tbody *ngFor="let eve of Stagevents">
+    
+        <tr *ngIf="eve.type=='Stage Event'">
+            <td width='70' >&nbsp;</td>
+            <td> <a [routerLink]="['/show-stage',eve.name]">{{eve.name}}</a></td>
+            <td><h6 [ngClass]="{'grey': eve.status=='ended', 'green':eve.status=='active'}">{{eve.status}}</h6></td>
+            <td>{{eve.type}}</td>
+
+        </tr>
+  </tbody>
+</table>
+<br/>

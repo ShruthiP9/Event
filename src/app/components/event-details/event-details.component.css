@@ -1,0 +1,62 @@
+tr:hover{
+    background-color:#f5f5f5;
+}
+table{
+    margin:10px;
+    padding:10px;
+    font-size:15px;
+    background-color:white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.grey{  
+    
+       border-radius:15px;
+       width:100px;
+       border:solid 1px white;
+       background-color: #BDB8B8;
+       padding: 3px;
+       color: white;
+       text-align:center;
+       font-size: 13px;
+       font-family: Arial, Helvetica, sans-serif;   
+   }
+   h6{  
+       
+          border-radius:15px;
+          width:100px;
+          border:solid 1px white;
+          background-color:orange;
+          padding: 3px;
+          color: white;
+          text-align:center;
+          font-size: 13px;
+          font-family: Arial, Helvetica, sans-serif;   
+      }
+     
+
+.css-serial {
+    counter-reset: serial-number; /* Set the serial number counter to 0 */
+   }
+   .css-serial td:first-child:before {
+    counter-increment: serial-number; /* Increment the serial number counter */
+    content: counter(serial-number); /* Display the counter */
+   }
+   .green{  
+    
+       border-radius:15px;
+       width:100px;
+       border:solid 1px white;
+       background-color: rgb(21, 165, 21);
+       padding: 3px;
+       color: white;
+       text-align:center;
+       font-size: 13px;
+       font-family: Arial, Helvetica, sans-serif;   
+   }
+  .css-serial>thead>th{
+    border-bottom:2px solid rgb(182, 180, 180);   
+}
+.css-serial>tbody>tr{
+    border-bottom:1px solid #DFD7D7;  
+}
